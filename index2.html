@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Lifecycle - Moodify App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    .circle-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+    }
+
+    .stage {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .plan { background: #6a5acd; top: 0; left: 200px; }
+    .develop { background: #1e90ff; top: 80px; left: 360px; }
+    .build { background: #20b2aa; top: 210px; left: 400px; }
+    .test { background: #32cd32; top: 340px; left: 340px; }
+    .release { background: #ffa500; top: 420px; left: 200px; }
+    .deploy { background: #ff6347; top: 340px; left: 40px; }
+    .operate { background: #dc143c; top: 210px; left: 0; }
+    .monitor { background: #8a2be2; top: 80px; left: 40px; }
+
+    .stages-explained {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .stages-explained h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .stages-explained p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .circle-container {
+        width: 100%;
+        height: auto;
+      }
+
+      .stage {
+        position: static;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle - Moodify Web App</h1>
+
+  <div class="circle-container">
+    <div class="stage plan">Plan<br><small>Planned mood-based music features</small></div>
+    <div class="stage develop">Develop<br><small>Wrote HTML, CSS, JS for UI & logic</small></div>
+    <div class="stage build">Build<br><small>Organized files and designed layout</small></div>
+    <div class="stage test">Test<br><small>Tested mood buttons & suggestions</small></div>
+    <div class="stage release">Release<br><small>Finalized content for deployment</small></div>
+    <div class="stage deploy">Deploy<br><small>Pushed to GitHub & Vercel</small></div>
+    <div class="stage operate">Operate<br><small>Hosted live for users</small></div>
+    <div class="stage monitor">Monitor<br><small>Reviewed feedback & performance</small></div>
+  </div>
+
+  <div class="stages-explained">
+    <h2>Stages Explained - Moodify Project</h2>
+    <p><strong>Plan:</strong> We planned to create a mood-based song recommendation app where users could click buttons matching their emotions.</p>
+    <p><strong>Develop:</strong> We developed the application using HTML for structure, CSS for colorful styling, and JavaScript for interactivity.</p>
+    <p><strong>Build:</strong> We structured files and designed a clean layout that supports responsiveness and smooth user experience.</p>
+    <p><strong>Test:</strong> We tested each mood button to ensure they display the correct song list dynamically and validate the user interface.</p>
+    <p><strong>Release:</strong> Once tested, the app was finalized, cleaned, and prepared for public deployment with all assets in place.</p>
+    <p><strong>Deploy:</strong> We pushed the project to GitHub and deployed it live using Vercel for easy access and sharing.</p>
+    <p><strong>Operate:</strong> The application was launched and made available online for users to interact with in real-time.</p>
+    <p><strong>Monitor:</strong> After deployment, we tested across devices, reviewed performance, and noted feedback for future updates.</p>
+  </div>
+</body>
+</html>
